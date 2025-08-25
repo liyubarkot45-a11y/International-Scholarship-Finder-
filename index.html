@@ -1,0 +1,521 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Scholarship Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>World Scholarship Finder</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">Tips</a>
+                <a href="suggest.html">Suggest</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+        <p>Helping people find global scholarship opportunities</p>
+    </header>
+    <main>
+        <div class="filters-container">
+            <select id="continent-select">
+                <option>All Continents</option>
+                <option>Africa</option>
+                <option>Asia</option>
+                <option>Europe</option>
+                <option>North America</option>
+                <option>South America</option>
+                <option>Oceania</option>
+            </select>
+            <select id="country-select">
+                <option>All Countries</option>
+                <optgroup label="Africa">
+                    <option>Ethiopia</option>
+                    <option>Nigeria</option>
+                    <option>South Africa</option>
+                    <option>Kenya</option>
+                    <option>Egypt</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option>China</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>South Korea</option>
+                    <option>Indonesia</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option>United Kingdom</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                    <option>Sweden</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </optgroup>
+                <optgroup label="South America">
+                    <option>Brazil</option>
+                    <option>Argentina</option>
+                    <option>Chile</option>
+                </optgroup>
+                <optgroup label="Oceania">
+                    <option>Australia</option>
+                    <option>New Zealand</option>
+                </optgroup>
+            </select>
+            <select id="level-select">
+                <option>All Levels</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+                <option>PhD</option>
+                <option>Postdoc</option>
+            </select>
+            <select id="field-select">
+                <option>All Fields</option>
+                <option>Any</option>
+                <option>Engineering</option>
+                <option>Medicine</option>
+                <option>Business</option>
+                <option>Science</option>
+                <option>Arts</option>
+                <option>Law</option>
+            </select>
+            <select id="type-select">
+                <option>All Types</option>
+                <option>Fully Funded</option>
+                <option>Partial</option>
+            </select>
+            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input">
+        </div>
+
+        <div class="scholarship-list">
+
+            <!-- Africa -->
+            <div class="scholarship-card"
+                 data-continent="Africa"
+                 data-country="South Africa"
+                 data-level="Graduate"
+                 data-field="Any"
+                 data-type="Fully Funded">
+                <h3>Mandela Rhodes Scholarship</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> South Africa</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-04-21</span>
+                </div>
+                
+                <p>Leadership development and academic scholarship for African students at South African universities.</p>
+                <a class="learn-more" href="https://www.mandelarhodes.org/scholarship/apply/" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="Africa"
+                 data-country="Ethiopia"
+                 data-level="PhD"
+                 data-field="Science"
+                 data-type="Fully Funded">
+                <h3>African Union Scholarship</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Ethiopia</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> PhD</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Science</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-03-10</span>
+                </div>
+                <p>PhD scholarships for Africans at Pan African University, Ethiopia.</p>
+                <a class="learn-more" href="https://www.pau-au.africa/apply" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Asia -->
+            <div class="scholarship-card"
+                 data-continent="Asia"
+                 data-country="Japan"
+                 data-level="Undergraduate"
+                 data-field="Any"
+                 data-type="Fully Funded">
+                <h3>Japanese Government (MEXT) Scholarship</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Japan</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Undergraduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-05-30</span>
+                </div>
+                <p>Provides full funding for international students to study at Japanese universities.</p>
+                <a class="learn-more" href="https://www.studyinjapan.go.jp/en/" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="Asia"
+                 data-country="China"
+                 data-level="Graduate"
+                 data-field="Engineering"
+                 data-type="Fully Funded">
+                <h3>Chinese Government Scholarship (CSC)</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> China</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Engineering</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-03-15</span>
+                </div>
+                <p>Full and partial scholarships for international students at Chinese universities.</p>
+                <a class="learn-more" href="https://www.csc.edu.cn/laihua/" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Europe -->
+            <div class="scholarship-card"
+                 data-continent="Europe"
+                 data-country="United Kingdom"
+                 data-level="Graduate"
+                 data-field="Any"
+                 data-type="Fully Funded">
+                <h3>Chevening Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> United Kingdom</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-11-07</span>
+                </div>
+                <p>Fully funded scholarships to pursue any master's course at any UK university.</p>
+                <a class="learn-more" href="https://www.chevening.org/scholarships/" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="Europe"
+                 data-country="Europe"
+                 data-level="Graduate"
+                 data-field="Business"
+                 data-type="Fully Funded">
+                <h3>Erasmus Mundus Joint Master Degrees</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Europe</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Business</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-02-15</span>
+                </div>
+                <p>International study programs offered by consortia of European universities.</p>
+                <a class="learn-more" href="https://www.eacea.ec.europa.eu/scholarships/emjmd-catalogue_en" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="Europe"
+                 data-country="Germany"
+                 data-level="Graduate"
+                 data-field="Engineering"
+                 data-type="Partial">
+                <h3>DAAD Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Germany</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Engineering</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-09-15</span>
+                </div>
+                <p>Supports international students for study and research in Germany.</p>
+                <a class="learn-more" href="https://www.daad.de/en/study-and-research-in-germany/scholarships-database/" target="_blank">Learn More</a>
+            </div>
+
+            <!-- North America -->
+            <div class="scholarship-card"
+                 data-continent="North America"
+                 data-country="USA"
+                 data-level="Graduate"
+                 data-field="Any"
+                 data-type="Fully Funded">
+                <h3>Fulbright Foreign Student Program</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> USA</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-10-01</span>
+                </div>
+                <p>Graduate students, young professionals, and artists from abroad can study and conduct research in the US.</p>
+                <a class="learn-more" href="https://foreign.fulbrightonline.org/about/foreign-student-program" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="North America"
+                 data-country="Canada"
+                 data-level="PhD"
+                 data-field="Science"
+                 data-type="Fully Funded">
+                <h3>Vanier Canada Graduate Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Canada</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> PhD</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Science</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-09-30</span>
+                </div>
+                <p>Top doctoral students can receive funding for research in Canadian universities.</p>
+                <a class="learn-more" href="https://vanier.gc.ca/en/home-accueil.html" target="_blank">Learn More</a>
+            </div>
+
+            <!-- South America -->
+            <div class="scholarship-card"
+                 data-continent="South America"
+                 data-country="Brazil"
+                 data-level="Undergraduate"
+                 data-field="Any"
+                 data-type="Partial">
+                <h3>Brazilian Government Exchange Program (PEC-G)</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Brazil</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Undergraduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-06-05</span>
+                </div>
+                <p>Scholarship for international students to study undergraduate programs in Brazil.</p>
+                <a class="learn-more" href="https://www.dce.mre.gov.br/PECG.php" target="_blank">Learn More</a>
+            </div>
+            <div class="scholarship-card"
+                 data-continent="South America"
+                 data-country="Argentina"
+                 data-level="Graduate"
+                 data-field="Arts"
+                 data-type="Partial">
+                <h3>Argentine Ministry of Education Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Argentina</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Arts</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-07-15</span>
+                </div>
+                <p>Funding opportunities for graduate students in Argentina.</p>
+                <a class="learn-more" href="https://becas-argentinas.educacion.gob.ar/" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Oceania -->
+            <div class="scholarship-card"
+                 data-continent="Oceania"
+                 data-country="Australia"
+                 data-level="Undergraduate"
+                 data-field="Medicine"
+                 data-type="Fully Funded">
+                <h3>Australia Awards Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> Australia</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Undergraduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Medicine</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-12-01</span>
+                </div>
+                <p>Long-term awards administered by the Department of Foreign Affairs and Trade.</p>
+                <a class="learn-more" href="https://www.dfat.gov.au/people-to-people/australia-awards/scholarships" target="_blank">Learn More</a>
+            </div>
+             <!-- Asia: KAIST, Singapore, India, China, Japan -->
+<div class="scholarship-card"
+     data-continent="Asia"
+     data-country="South Korea"
+     data-level="Undergraduate"
+     data-field="Engineering"
+     data-type="Fully Funded">
+    <h3>KAIST International Student Scholarship</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> South Korea</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Undergraduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Engineering</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-10-20</span>
+    </div>
+    <p>Full tuition, monthly stipend, and health insurance for international undergraduates at KAIST.</p>
+    <a class="learn-more" href="https://www.kaist.ac.kr/en/html/kaist/020207.html" target="_blank">Learn More</a>
+</div>
+
+<div class="scholarship-card"
+     data-continent="Asia"
+     data-country="Singapore"
+     data-level="Graduate"
+     data-field="Science"
+     data-type="Fully Funded">
+    <h3>SINGA Scholarship</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> Singapore</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Science</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-12-01</span>
+    </div>
+    <p>Fully funded PhD scholarships for international students at Singapore universities.</p>
+    <a class="learn-more" href="https://www.a-star.edu.sg/Scholarships/singa-scholarship" target="_blank">Learn More</a>
+</div>
+
+<div class="scholarship-card"
+     data-continent="Asia"
+     data-country="India"
+     data-level="Graduate"
+     data-field="Any"
+     data-type="Partial">
+    <h3>Indian Council for Cultural Relations (ICCR) Scholarship</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> India</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-03-30</span>
+    </div>
+    <p>Scholarships for international students to study at Indian universities, covering tuition, hostel, and living expenses.</p>
+    <a class="learn-more" href="https://a2ascholarships.iccr.gov.in/" target="_blank">Learn More</a>
+</div>
+
+<!-- Europe: Oxford, Erasmus, DAAD, Chevening -->
+<div class="scholarship-card"
+     data-continent="Europe"
+     data-country="United Kingdom"
+     data-level="Graduate"
+     data-field="Any"
+     data-type="Fully Funded">
+    <h3>Rhodes Scholarship</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> United Kingdom</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-09-30</span>
+    </div>
+    <p>Scholarship for exceptional students to study at the University of Oxford.</p>
+    <a class="learn-more" href="https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/" target="_blank">Learn More</a>
+</div>
+
+<!-- North America: USA, Canada -->
+<div class="scholarship-card"
+     data-continent="North America"
+     data-country="USA"
+     data-level="Graduate"
+     data-field="Any"
+     data-type="Fully Funded">
+    <h3>Stanford Knight-Hennessy Scholars</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> USA</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-10-09</span>
+    </div>
+    <p>Full funding for graduate studies at Stanford University for future global leaders.</p>
+    <a class="learn-more" href="https://knight-hennessy.stanford.edu/admission" target="_blank">Learn More</a>
+</div>
+
+<div class="scholarship-card"
+     data-continent="North America"
+     data-country="Canada"
+     data-level="Undergraduate"
+     data-field="Any"
+     data-type="Partial">
+    <h3>Lester B. Pearson International Scholarship</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> Canada</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Undergraduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Any</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-01-15</span>
+    </div>
+    <p>Scholarship for international students at University of Toronto, covering tuition, books, and residence support.</p>
+    <a class="learn-more" href="https://future.utoronto.ca/pearson/about/" target="_blank">Learn More</a>
+</div>
+
+<!-- Africa: Mandela Rhodes, African Union -->
+<!-- Already in your list -->
+
+<!-- Oceania: Australia Awards, NZ Scholarships -->
+<!-- Already in your list -->
+
+<!-- South America: USP, PEC-G, Argentine Ministry -->
+<div class="scholarship-card"
+     data-continent="South America"
+     data-country="Brazil"
+     data-level="Graduate"
+     data-field="Science"
+     data-type="Partial">
+    <h3>USP International Master's & PhD Scholarships</h3>
+    <div class="scholarship-meta">
+        <span class="meta-item"><span class="icon">&#127758;</span> Brazil</span>
+        <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+        <span class="meta-item"><span class="icon">&#128218;</span> Science</span>
+        <span class="meta-item"><span class="icon">&#128176;</span> Partial</span>
+        <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-03-01</span>
+    </div>
+    <p>Partial scholarships for international graduate students at University of São Paulo.</p>
+    <a class="learn-more" href="https://www.internationaloffice.usp.br/index.php/en/scholarships-en" target="_blank">Learn More</a>
+</div>
+</div>
+            <div class="scholarship-card"
+                 data-continent="Oceania"
+                 data-country="New Zealand"
+                 data-level="Graduate"
+                 data-field="Science"
+                 data-type="Fully Funded">
+                <h3>New Zealand Scholarships</h3>
+                <div class="scholarship-meta">
+                    <span class="meta-item"><span class="icon">&#127758;</span> New Zealand</span>
+                    <span class="meta-item"><span class="icon">&#127891;</span> Graduate</span>
+                    <span class="meta-item"><span class="icon">&#128218;</span> Science</span>
+                    <span class="meta-item"><span class="icon">&#128176;</span> Fully Funded</span>
+                    <span class="meta-item deadline"><span class="icon">&#9201;</span> 2025-08-10</span>
+                </div>
+                <p>Fully funded scholarships for developing country students to study in New Zealand.</p>
+                <a class="learn-more" href="https://www.nzscholarships.govt.nz/" target="_blank">Learn More</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 World Scholarship Finder</p>
+    </footer>
+    <script>
+    // Hide all scholarships by default
+    document.addEventListener("DOMContentLoaded", function() {
+      const scholarshipCards = document.querySelectorAll('.scholarship-card');
+      scholarshipCards.forEach(card => card.style.display = "none");
+
+      // Filtering logic
+      function filterScholarships() {
+        const continent = document.getElementById('continent-select').value;
+        const country = document.getElementById('country-select').value;
+        const level = document.getElementById('level-select').value;
+        const field = document.getElementById('field-select').value;
+        const type = document.getElementById('type-select').value;
+        const search = document.getElementById('search-input').value.toLowerCase();
+
+        scholarshipCards.forEach(card => {
+          const matchesContinent = (continent === "All Continents" || card.dataset.continent === continent);
+          const matchesCountry = (country === "All Countries" || card.dataset.country === country);
+          const matchesLevel = (level === "All Levels" || card.dataset.level === level);
+          const matchesField = (field === "All Fields" || card.dataset.field === field);
+          const matchesType = (type === "All Types" || card.dataset.type === type);
+          const matchesSearch = (
+            search === "" ||
+            card.querySelector('h3').textContent.toLowerCase().includes(search) ||
+            card.querySelector('p').textContent.toLowerCase().includes(search)
+          );
+
+          if (matchesContinent && matchesCountry && matchesLevel && matchesField && matchesType && matchesSearch) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      // Add event listeners to all filters
+      document.getElementById('continent-select').addEventListener('change', filterScholarships);
+      document.getElementById('country-select').addEventListener('change', filterScholarships);
+      document.getElementById('level-select').addEventListener('change', filterScholarships);
+      document.getElementById('field-select').addEventListener('change', filterScholarships);
+      document.getElementById('type-select').addEventListener('change', filterScholarships);
+      document.getElementById('search-input').addEventListener('input', filterScholarships);
+    });
+    </script>
+</body>
+</html>
+
