@@ -1,0 +1,221 @@
+ body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    background: #1565c0;
+    color: #fff;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8vw 0 8vw;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+header nav {
+    display: flex;
+    gap: 18px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+header nav a:hover {
+    background: #0d47a1;
+}
+
+header p {
+    text-align: center;
+    margin: 8px 0 0 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto 20px auto;
+    padding: 0 8vw;
+}
+
+.filters-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    padding: 7px 12px;
+    border: 1px solid #b0bec5;
+    border-radius: 3px;
+    font-size: 1rem;
+    background: #fff;
+    min-width: 210px;
+}
+
+.filters-container select {
+    padding: 7px 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 3px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.scholarship-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.scholarship-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px rgba(21,101,192,0.08);
+    padding: 22px 24px;
+    max-width: 380px;
+    flex: 1 1 340px;
+    margin-bottom: 0;
+    transition: transform 0.14s, box-shadow 0.14s;
+    display: none; /* Cards hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scholarship-card.show {
+    display: flex !important;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 6px 28px rgba(21,101,192,0.13);
+}
+
+.scholarship-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1565c0;
+    font-size: 1.13rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.scholarship-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+    font-size: 0.99rem;
+}
+
+.meta-item {
+    background: #e3f2fd;
+    color: #1565c0;
+    border-radius: 4px;
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 500;
+}
+
+.meta-item.deadline {
+    background: #ffe0e0;
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+.icon {
+    margin-right: 3px;
+    font-size: 1.1em;
+}
+
+.scholarship-card p {
+    margin: 10px 0 14px 0;
+    font-size: 1.01rem;
+    color: #333;
+    flex-grow: 1;
+}
+
+.learn-more {
+    display: inline-block;
+    background: #1565c0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 4px;
+    margin-top: auto;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(21,101,192,0.06);
+}
+
+.learn-more:hover {
+    background: #0d47a1;
+}
+
+footer {
+    background: #1565c0;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .header-container,
+    main {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+    header nav {
+        gap: 9px;
+        flex-wrap: wrap;
+    }
+    main {
+        padding: 0 3vw;
+    }
+    .filters-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .scholarship-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .scholarship-card {
+        max-width: 100%;
+        padding: 16px;
+    }
+}

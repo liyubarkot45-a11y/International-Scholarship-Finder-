@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | World Scholarship Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>World Scholarship Finder</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="blog.html">Tips</a>
+                <a href="suggest.html">Suggest</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+        <p>Helping people find global scholarship opportunities</p>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formStatus"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 World Scholarship Finder</p>
+    </footer>
+    <script>
+        // Simple client-side form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formStatus').textContent = "Thank you for your message! We'll get back to you soon.";
+            this.reset();
+        });
+    </script>
+</body>
+</html>
